@@ -1,0 +1,238 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background: white;
+    
+}
+    
+  h1, h2 {
+    font-weight: normal;
+    color: #555;
+  }
+  
+
+  .parent{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .purple-line{
+    height: 2px;
+    background-color: purple;
+    width: 100%;
+  }
+  .profile-container {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+  
+  }
+ 
+  .profile-tabs {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+ 
+  .tabs-container {
+    display: inline-flex; 
+    padding: px 0;
+    width: 100%;
+  }
+
+  .email{
+    color: purple;
+  }
+  .tab {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px; 
+    margin: 0 35px; 
+  }
+ 
+  .tab.active {
+    color: purple;
+
+  }
+
+  .interests ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 60px; 
+  }
+  
+  .interests li {
+    position: relative; 
+    margin: 20px;
+  }
+  
+  .interests li::before {
+    content: '-'; 
+    position: absolute;
+    left: -1em; 
+  }
+  
+ 
+  .profile-pic{
+    border-radius: 50%;
+    width: 200px;
+  }
+  .profile-body {
+    display: flex;
+    min-height: 100vh;
+  }
+ 
+  .profile-sidebar {
+    flex: row;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    
+  }
+
+  .profile-sidebar::after {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    right: 0;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 1px; 
+    background-color: lightgrey;
+  }
+
+
+  
+ 
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+ 
+  .profile-content {
+    flex: row;
+   width: 100%;
+    padding: 20px;
+  }
+
+  .content-section {
+    display: none;
+  }
+ 
+  .content-section.active {
+    display: block;
+  }
+ 
+  .title {
+    color: #888;
+  }
+
+  .skill label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+  }
+
+  .skill-bar {
+    height: 15px;
+    background-color: gainsboro;
+    border-radius: 10px;
+  }
+
+  .skill-percentage {
+    height: 100%;
+    background-color: blue;
+    border-radius: 10px;
+  
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      margin-left: 30vh;
+      margin-right: 30vh;
+    }
+    .tab {
+      flex-grow: 1; 
+      margin: 5px 0; 
+      text-align: center; 
+    }
+    
+    
+  }
+ 
+  @media (max-width: 850px) {
+    .profile-body {
+      flex-direction: column;
+    }
+ 
+    .profile-sidebar, .profile-content {
+      width: 100%;
+    }
+ 
+    .profile-tabs {
+      justify-content: center;
+    }
+ 
+    .tabs-container {
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+    }
+
+    .tab {
+      flex-grow: 1; 
+      margin: 5px 0; 
+      text-align: center; 
+    }
+    
+
+    .profile-container, .profile-content, .profile-sidebar {
+      padding: 10px;
+    }
+
+
+  }
+
+  .page-footer {
+    text-align: center;
+    padding: 3px;
+    border: 0;
+    width: 100%;
+    border-top: 1px solid lightgrey;
+  }
+
+  .education-degree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 20px; 
+    margin-top: 50px;
+  }
+  
+  .degree-info h3 {
+    margin: 0; 
+    padding-right: 10px;
+  }
+  
+  .degree-info p {
+    margin: 4px 0; 
+    color: #555;
+  }
+  
+  .degree-date p {
+    text-align: right; 
+    margin: 4px 0; 
+    color: #555;
+  }
+
+  .Credentials p {
+    margin-top: 80px;
+    color: #888;
+  }
+  
+  
+ 
